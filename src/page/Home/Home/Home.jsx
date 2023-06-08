@@ -5,30 +5,32 @@ import Popular from "../Popular/Popular";
 
 
 const Home = () => {
-    const [popular, setPopular] =useState([]);
+    const [popular, setPopular] = useState([]);
 
     useEffect(() => {
         fetch('popular.json')
-        .then(res => res.json())
-        .then(data =>{
-            setPopular(data)
-        })
+            .then(res => res.json())
+            .then(data => {
+                setPopular(data)
+            })
     }, [])
     return (
         <div>
-           <Banner></Banner>
-           <WelcomeSection></WelcomeSection>
-           
-           <div className="grid md:grid-cols-3 gap-5 p-4">
-            {
-                popular.map(populer => <Popular
-                key={populer.id}
-                populer={populer}
-                ></Popular>)
-            }
-           </div>
+            <Banner></Banner>
+            <div className="max-w-screen-lg mx-auto">
+                <WelcomeSection></WelcomeSection>
 
-           
+                <div className="grid md:grid-cols-3 gap-3 p-4">
+                    {
+                        popular.map(populer => <Popular
+                            key={populer.id}
+                            populer={populer}
+                        ></Popular>)
+                    }
+                </div>
+            </div>
+
+
         </div>
     );
 };
