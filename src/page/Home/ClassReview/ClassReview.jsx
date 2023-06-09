@@ -7,7 +7,7 @@ const ClassReview = () => {
     const [classe, setClasse] = useState([]);
 
     useEffect(() => {
-        fetch('class.json')
+        fetch('http://localhost:5000/classes')
             .then(res => res.json())
             .then(data => {
                 setClasse(data)
