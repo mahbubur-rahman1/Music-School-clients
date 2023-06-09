@@ -2,11 +2,15 @@ import React from 'react';
 import { Rating } from '@smastrom/react-rating'
 
 import '@smastrom/react-rating/style.css';
+import Swal from 'sweetalert2';
 
-const ClassDetailsCard = ({populer}) => {
+const ClassDetailsCard = ({ populer }) => {
 
     const { name, picture, email, rating, classe, price } = populer;
-    return (
+
+
+   
+       return (
         <div className='card w-full bg-base-100 p-3 shadow-xl'>
             <img className='w-full h-48' src={picture} alt="" />
             <div className="">
@@ -18,8 +22,12 @@ const ClassDetailsCard = ({populer}) => {
                     value={rating}
                     readOnly
                 /></span>
+                
             </div>
+
         </div>
+            
+       
     );
 };
 
