@@ -17,7 +17,7 @@ const Instructors = () => {
             <div className="max-w-screen-lg  mx-auto">
                 
 
-                <div className="grid md:grid-cols-3 mt-10 gap-5 p-4">
+                <div className="grid md:grid-cols-3 gap-5 p-4">
                     {
 
                         popular.map(populer => <InstactorsCard
