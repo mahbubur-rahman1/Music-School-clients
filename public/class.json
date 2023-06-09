@@ -1,0 +1,98 @@
+[
+    {
+      "name": "Caml Carry ",
+      "class": "Music ",
+      "rating": 4.5,
+      "email": "1@gmail.com",
+      "price": 1000.99,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnZxYbtpiLN_dOpxye7K6rBtQlYD7j8sHGhw&usqp=CAU"
+    },
+    {
+      "name": "Linda",
+      "class": "Music Class ",
+      "rating": 4.8,
+      "email": "linda2@gmail.com",
+      "price": 19.99,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0jMKR7Oi05wSrYdOta9v63z3ybmf6QSM49Q&usqp=CAU"
+    },
+    {
+      "name": "Tashrif",
+      "class": "Music Class ",
+      "rating": 4.2,
+      "email": "3@gmail.com",
+      "price": 7.99,
+      "picture": "https://gmail.com/3.jpg"
+    },
+    {
+      "name": " 4",
+      "class": "Music Class ",
+      "rating": 4.1,
+      "email": "4@gmail.com",
+      "price": 14.99,
+      "picture": "https://gmail.com/4.jpg"
+    },
+    {
+      "name": " 5",
+      "class": "Music Class ",
+      "rating": 3.5,
+      "email": "5@gmail.com",
+      "price": 9.99,
+      "picture": "https://gmail.com/5.jpg"
+    },
+    {
+      "name": " 6",
+      "class": "Music Class ",
+      "rating": 4.8,
+      "email": "6@gmail.com",
+      "price": 12.99,
+      "picture": "https://gmail.com/6.jpg"
+    },
+    {
+      "name": " 7",
+      "class": "Music Class ",
+      "rating": 4.0,
+      "email": "7@gmail.com",
+      "price": 6.99,
+      "picture": "https://gmail.com/7.jpg"
+    },
+    {
+      "name": " 8",
+      "class": "Music Class ",
+      "rating": 4.6,
+      "email": "8@gmail.com",
+      "price": 17.99,
+      "picture": "https://gmail.com/8.jpg"
+    },
+    {
+      "name": " 9",
+      "class": "Music Class ",
+      "rating": 3.9,
+      "email": "9@gmail.com",
+      "price": 11.99,
+      "picture": "https://gmail.com/9.jpg"
+    },
+    {
+      "name": " 10",
+      "class": "Music Class ",
+      "rating": 4.4,
+      "email": "10@gmail.com",
+      "price": 8.99,
+      "picture": "https://gmail.com/10.jpg"
+    },
+    {
+      "name": " 11",
+      "class": "Music Class ",
+      "rating": 4.2,
+      "email": "11@gmail.com",
+      "price": 13.99,
+      "picture": "https://gmail.com/11.jpg"
+    },
+    {
+      "name": " 12",
+      "class": "Music Class ",
+      "rating": 3.7,
+      "email": "12@gmail.com",
+      "price": 15.99,
+      "picture": "https://gmail.com/12.jpg"
+    }
+]

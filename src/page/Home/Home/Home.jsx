@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Banner from "../Banner/Banner";
 import WelcomeSection from "../WelcomeSection/WelcomeSection";
 import Popular from "../Popular/Popular";
+import SectionTitel from "../SectionTitel/SectionTitel";
+
 
 
 const Home = () => {
@@ -20,9 +22,19 @@ const Home = () => {
             <div className="max-w-screen-lg mx-auto">
                 <WelcomeSection></WelcomeSection>
 
-                <div className="grid md:grid-cols-3 gap-3 p-4">
+
+                <SectionTitel
+                heading="Popular Instactors"
+                >
+                    
+                </SectionTitel>
+                <hr />
+
+                <div className="grid md:grid-cols-3 gap-5 mt-10 p-4">
                     {
-                        popular.map(populer => <Popular
+                       
+
+                        popular.slice(0, 6).map(populer => <Popular
                             key={populer.id}
                             populer={populer}
                         ></Popular>)

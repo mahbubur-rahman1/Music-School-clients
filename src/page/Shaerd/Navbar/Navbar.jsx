@@ -22,7 +22,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <img className="h-16 w-24 rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0SotQ6s59qGAG64o22hAX84dJxgE2nqLjbg&usqp=CAU" alt="" />
-                    <a className="btn btn-ghost normal-case text-xl">Bristro Boss</a>
+                    <a className="btn btn-ghost normal-case text-xl">Music School</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

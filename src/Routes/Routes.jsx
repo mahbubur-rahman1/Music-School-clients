@@ -4,6 +4,8 @@ import {
 import Main from "../Layout/Main/Main";
 import Home from "../page/Home/Home/Home";
 import Login from "../Compunents/Login/Login";
+import Instructors from "../page/Shaerd/Instructors/Instructors";
+
 
 
 
@@ -20,6 +22,10 @@ import Login from "../Compunents/Login/Login";
         {
             path: "/login",
             element: <Login></Login>
+        },
+        {
+          path: "/instructors",
+          element: <Instructors></Instructors>
         }
       ]
 

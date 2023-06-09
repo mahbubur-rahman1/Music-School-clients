@@ -1,44 +1,135 @@
 [
     {
       "id": "6481e205810d8f50607f6741",
-      "name": "Tashrif Khan",
+      "name": "Linda",
       "email": "tasrifkhan@gmail.com",
       "rating": 4.5,
-      "picture": "https://m.media-amazon.com/images/I/51dIt8yGn-L._UXNaN_FMjpg_QL85_.jpg"
+      "picture": "https://www.develdeinternational.com/wp-content/uploads/2016/05/corporate-headshot-Hong-Kong-american-man-smiling-at-camera.jpg"
     },
     {
       "id": "6481e2059f92e091f6eaef23",
-      "name": "Arijit Singh",
+      "name": "Larian",
       "email": "arijitsingh@gmail.com",
-      "rating": 6,
-      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ--XQf6POUPBDrZhufaULzZTee9e2E2Zr0CA&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ--XQf6POUPBDrZhufaULzZTee9e2E2Zr0CA&usqp=CAUzz"
+      "rating": 5,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqfuls3Jkfo2SffcwqKXth-g5puGH-fYj40StB42am3MOdCf8tc1qkwNjRWVE6LLxC6k&usqp=CAU"
     },
     {
       "id": "6481e20534a71c81cda2b818",
       "name": "Jonna Zambas" ,
       "email": "jonnazams@gmail.com",
       "rating": 4.5,
-      "picture": "https://cdn3.careeraddict.com/uploads/article/54483/man-playing-acoustic-guitar.jpg"
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_IVSVnsgVvHg7QJ1FJytzTF1SYkIGbQCEwV8SHlYz-YAjtGvc5WTYqjWc5DUxmlodprw&usqp=CAU"
     },
     {
       "id": "6481e20596f67b1ddd4a6781",
       "name": "Debbie Harry",
       "email": "debbieharry@gmail.com",
-      "rating": 4.4,
-      "picture": "https://support.musicgateway.com/wp-content/uploads/2020/03/Musicians-hero.jpg"
+      "rating": 3.4,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrpjtxwbaUTrgXk6bnHsVMUyiJZKUzU9qiWe8baRUF-HZp4W1qeTLRayt_UYwBZc_dk_M&usqp=CAU"
     },
     {
       "id": "6481e205e785667706907dda",
       "name": "Angela ",
       "email": "angela12@gamil.com",
-      "rating": 5,
-      "picture": "https://carnegiehall.imgix.net/-/media/CarnegieHall/Images/Explore/Learn/Young-Musicians/Songwriting-Workshop/The-Bridge-and-Completing-Your-Song-CARD.png?fit=crop&crop=faces"
+      "rating": 2.5,
+      "picture": "https://st4.depositphotos.com/6672578/39228/i/1600/depositphotos_392287272-stock-photo-portrait-mature-african-american-businessman.jpg"
     },
     {
       "id": "6481e20535c6d1f236e2bd97",
       "name": "Jampals Carry",
       "email": "japals@gmail.com",
       "rating": 4,
-      "picture": "https://i.ytimg.com/vi_webp/S33tWZqXhnk/hqdefault.webp"
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3IebjNDm9PDoe7fCtKDCih12VX1DXWll6Vd01rz7EEykdD0qfoFSeRdgfYXQeFKSUBa4&usqp=CAU"
+    },
+    {
+      "id": 1,
+      "name": "John Smith",
+      "email": "johnsmith@gmail.com",
+      "rating": 4.3,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvU0wskXBP2tnYucvdQRydSkT2-9eL1kW_fDmrpxHTiz14W3Jyu6YtxeKdjsbNtt2zKxU&usqp=CAU"
+    },
+    {
+      "id": 2,
+      "name": "Emma Johnson",
+      "email": "emmajohnson@gmail.com",
+      "rating": 4.8,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnuEVTK8NMhz8dmugciNu08-t0vCsPtaBRAA&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "name": "Michael Davis",
+      "email": "michaeldavis@gmail.com",
+      "rating": 4.1,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_8DJpDsV1ZOKcQ8jmA4rgmk8-UH6tPJaI_Q&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "name": "Olivia Wilson",
+      "email": "oliviawilson@gmail.com",
+      "rating": 3.9,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz932DMypI7YnhOARw7AWx-TiJ5qLWkilVfg&usqp=CAU"
+    },
+    {
+      "id": 5,
+      "name": "William Thompson",
+      "email": "williamthompson@gmail.com",
+      "rating": 4.2,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe3Dolw5sWI9qbmMbguY5S1BJ2Qe82iEGPkQ&usqp=CAU"
+    },
+    {
+      "id": 6,
+      "name": "Sophia Garcia",
+      "email": "sophiagarcia@gmail.com",
+      "rating": 4.7,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY98kPHfCCIy_KBEi588hLsdvg6xt097XcDw&usqp=CAU"
+    },
+    {
+      "id": 7,
+      "name": "Liam Martinez",
+      "email": "liammartinez@gmail.com",
+      "rating": 4.5,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBDuW-wYhi1U5NzETGrIGyNVtxzsDkwr-8Iw&usqp=CAU"
+    },
+    {
+      "id": 8,
+      "name": "Isabella Taylor",
+      "email": "isabellataylor@gmail.com",
+      "rating": 4.0,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBDuW-wYhi1U5NzETGrIGyNVtxzsDkwr-8Iw&usqp=CAU"
+    },
+    {
+      "id": 9,
+      "name": "James Anderson",
+      "email": "jamesanderson@gmail.com",
+      "rating": 4.6,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0312sCYCL4fya8RCWeWubly1appPPKXAPGQ&usqp=CAU"
+    },
+    {
+      "id": 10,
+      "name": "Mia Thomas",
+      "email": "miathomas@gmail.com",
+      "rating": 4.4,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAobTlhoLK-_gP-TtWbJ5kNy7F10yMIal_og&usqp=CAU"
+    },
+    {
+      "id": 11,
+      "name": "Benjamin Rodriguez",
+      "email": "benjaminrodriguez@gmail.com",
+      "rating": 4.9,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlJaDyztBjtzFdK6FMHnyhV0Mg-MDSX2H7-A&usqp=CAU"
+    },
+    {
+      "id": 12,
+      "name": "Sophie Anderson",
+      "email": "sophieanderson@gmail.com",
+      "rating": 4.3,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0VFMY7p-dhFbL77oCzYAo3OACPq1zU8UJ6Q&usqp=CAU"
+    },
+    {
+      "id": 13,
+      "name": "Jacob Thompson",
+      "email": "jacobthompson@gmail.com",
+      "rating": 4.7,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcEaI4DcVNNqggD5ISUhmqy0ni_nS7xzSbGw&usqp=CAU"
     }
   ]
