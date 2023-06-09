@@ -13,7 +13,7 @@ const ClassesDetails = () => {
     }, [])
     return (
         <div>
-             <div className="grid md:grid-cols-3 gap-5 mt-10 p-4">
+             <div className="grid md:grid-cols-3 gap-5  p-4">
                     {
 
 

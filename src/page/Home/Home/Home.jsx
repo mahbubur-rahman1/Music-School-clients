@@ -11,7 +11,7 @@ const Home = () => {
     const [popular, setPopular] = useState([]);
 
     useEffect(() => {
-        fetch('popular.json')
+        fetch('http://localhost:5000/instructors')
             .then(res => res.json())
             .then(data => {
                 setPopular(data)

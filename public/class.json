@@ -94,5 +94,49 @@
       "email": "marup@gmail.com",
       "price": 999.99,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-tefnfRw23po-PbsJy0nynqXz6hUv-R0LdA&usqp=CAU"
+    },
+
+
+
+    {
+      "name": " 12",
+      "classe": "Music Class ",
+      "rating": 3.7,
+      "email": "marup@gmail.com",
+      "price": 999.99,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpxcwauw2l4TA5cInxqw7qGrqI5JQXZbFTDA&usqp=CAU"
+    },
+    {
+      "name": " 12",
+      "classe": "Music Class ",
+      "rating": 3.7,
+      "email": "marup@gmail.com",
+      "price": 799.99,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJJ49LGeALlTgA-alCxr_2_RjQtAQCaQMytQ&usqp=CAU"
+    },
+
+    {
+      "name": " 12",
+      "classe": "Music Class ",
+      "rating": 3.7,
+      "email": "marup@gmail.com",
+      "price": 699.99,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAobTlhoLK-_gP-TtWbJ5kNy7F10yMIal_og&usqp=CAU"
+    },
+    {
+      "name": " 12",
+      "classe": "Music Class ",
+      "rating": 3.7,
+      "email": "marup@gmail.com",
+      "price": 699.99,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIUbD-MGUKVhfwHS-0RPygwg-Sqfo8NELpxg&usqp=CAU"
+    },
+    {
+      "name": " 12",
+      "classe": "Music Class ",
+      "rating": 3.7,
+      "email": "marup@gmail.com",
+      "price": 699.99,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtGIexDTnI7I5OoTjyq_1z_ypNbyDA2AACXQ&usqp=CAU"
     }
 ]
