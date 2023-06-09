@@ -1,7 +1,7 @@
 [
     {
       "name": "Caml Carry ",
-      "class": "Music Class",
+      "classe": "Music Class",
       "rating": 4.5,
       "email": "camel@gmail.com",
       "price": 1000.99,
@@ -9,90 +9,90 @@
     },
     {
       "name": "Linda",
-      "class": "Music Class ",
+      "classe": "Music Class ",
       "rating": 4.8,
       "email": "linda2@gmail.com",
-      "price": 19.99,
+      "price": 1200.99,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0jMKR7Oi05wSrYdOta9v63z3ybmf6QSM49Q&usqp=CAU"
     },
     {
       "name": "Tashrif",
-      "class": "Music Class ",
+      "classe": "Music Class ",
       "rating": 4.2,
       "email": "tasrif@gmail.com",
-      "price": 7.99,
+      "price": 700.99,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbzP68CJYfBVFc086W9rPl1Yzk0zuynCFihh-MPnOmx9u1RjYmOKmRVeE1_9oz3-DY71k&usqp=CAU"
     },
     {
       "name": "",
-      "class": "Music Class ",
+      "classe": "Music Class ",
       "rating": 4.1,
       "email": "layon@gmail.com",
-      "price": 14.99,
+      "price": 1499.99,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkIUBqNU-5xgZ09dsjweD_ogrC9SnnbiAhLGwtQ0mcJ6N5gg6X-pbWqVDO_HU1brbLqz4&usqp=CAU"
     },
     {
       "name": " 5",
-      "class": "Music Class ",
+      "classe": "Music Class ",
       "rating": 3.5,
       "email": "iqbal@gmail.com",
-      "price": 9.99,
+      "price": 999.99,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgpcF87XU-Mn2MKE7AHVwlUx3TtcoGMjExtA&usqp=CAU"
     },
     {
       "name": " 6",
-      "class": "Music Class ",
+      "classe": "Music Class ",
       "rating": 4.8,
       "email": "saiful@gmail.com",
-      "price": 12.99,
+      "price": 700,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtV6ea2ETcSV-90Cqx528AiHE_y6vjUUrNXw&usqp=CAU"
     },
     {
       "name": " 7",
-      "class": "Music Class ",
+      "classe": "Music Class ",
       "rating": 4.0,
       "email": "shamim@gmail.com",
-      "price": 6.99,
+      "price": 600,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg6m_IHURbzS2-QnqVwpgyuGcDsAKtTq2j9g&usqp=CAU"
     },
     {
       "name": " 8",
-      "class": "Music Class ",
+      "classe": "Music Class ",
       "rating": 4.6,
       "email": "asad@gmail.com",
-      "price": 17.99,
+      "price": 500,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg6m_IHURbzS2-QnqVwpgyuGcDsAKtTq2j9g&usqp=CAU"
     },
     {
       "name": " 9",
-      "class": "Music Class ",
+      "classe": "Music Class ",
       "rating": 3.9,
       "email": "hasan@gmail.com",
-      "price": 11.99,
+      "price": 800,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIUbD-MGUKVhfwHS-0RPygwg-Sqfo8NELpxg&usqp=CAU"
     },
     {
       "name": " 10",
-      "class": "Music Class ",
+      "classe": "Music Class ",
       "rating": 4.4,
       "email": "rubel@gmail.com",
-      "price": 8.99,
+      "price": 1000,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgsfb88j6Oe3_7ErVri7JO0RdSQviByarKvQ&usqp=CAU"
     },
     {
       "name": " 11",
-      "class": "Music Class ",
+      "classe": "Music Class ",
       "rating": 4.2,
       "email": "mahfuj@gmail.com",
-      "price": 13.99,
+      "price": 1399.99,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtGIexDTnI7I5OoTjyq_1z_ypNbyDA2AACXQ&usqp=CAU"
     },
     {
       "name": " 12",
-      "class": "Music Class ",
+      "classe": "Music Class ",
       "rating": 3.7,
       "email": "marup@gmail.com",
-      "price": 15.99,
+      "price": 999.99,
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-tefnfRw23po-PbsJy0nynqXz6hUv-R0LdA&usqp=CAU"
     }
 ]

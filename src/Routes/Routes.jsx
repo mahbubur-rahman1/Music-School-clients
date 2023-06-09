@@ -5,6 +5,7 @@ import Main from "../Layout/Main/Main";
 import Home from "../page/Home/Home/Home";
 import Login from "../Compunents/Login/Login";
 import Instructors from "../page/Shaerd/Instructors/Instructors";
+import ClassesDetails from "../page/Home/ClassesDetails/ClassesDetails";
 
 
 
@@ -26,6 +27,10 @@ import Instructors from "../page/Shaerd/Instructors/Instructors";
         {
           path: "/instructors",
           element: <Instructors></Instructors>
+        },
+        {
+          path: "/classes",
+          element: <ClassesDetails></ClassesDetails>
         }
       ]
 
