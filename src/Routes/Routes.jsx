@@ -6,6 +6,8 @@ import Home from "../page/Home/Home/Home";
 import Login from "../Compunents/Login/Login";
 import Instructors from "../page/Shaerd/Instructors/Instructors";
 import ClassesDetails from "../page/Home/ClassesDetails/ClassesDetails";
+import DashBoard from "../Layout/Main/DashBoard";
+import SelectetClass from "../DashBoard/SelectetClass";
 
 
 
@@ -35,4 +37,15 @@ import ClassesDetails from "../page/Home/ClassesDetails/ClassesDetails";
       ]
 
     },
+
+    {
+      path: "dashboard",
+      element: <DashBoard></DashBoard>,
+      children: [
+        {
+          path: "selectetclass",
+          element: <SelectetClass></SelectetClass>
+        }
+      ]
+    }
   ]);
