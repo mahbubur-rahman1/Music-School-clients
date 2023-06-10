@@ -13,6 +13,7 @@ import {
 
 import { createContext, useEffect, useState } from "react";
 import { app } from "../firebase/firebase.config";
+import axios from "axios";
 
 
 export const AuthContext = createContext(null);
@@ -69,41 +70,41 @@ const AuthProviders = ({ children }) => {
 
 
 
-//   useEffect(() => {
-//     const unsubscribe = onAuthStateChanged(auth, (loggedUser) => {
-//       // console.log('Logged in user inside auth', loggedUser)
-//       setUser(loggedUser);
-//       if(loggedUser){
-//         axios.post('http://localhost:5000/jwt', {email: loggedUser.email})
-//         .then(data =>{
-//           // console.log(data.data.token)
-//           localStorage.setItem('access-token', data.data.token)
-//           setLoading(false);
-//         })
-//       }
-//       else{
-//         localStorage.removeItem('access-token')
-//       }
-     
-//     });
-
-//     return () => {
-//       unsubscribe();
-//     };
-//   }, []);
-
-
-useEffect(() => {
+  useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (loggedUser) => {
       // console.log('Logged in user inside auth', loggedUser)
       setUser(loggedUser);
-      setLoading(false);
+      if(loggedUser){
+        axios.post('http://localhost:5000/jwt', {email: loggedUser.email})
+        .then(data =>{
+          // console.log(data.data.token)
+          localStorage.setItem('access-token', data.data.token)
+          setLoading(false);
+        })
+      }
+      else{
+        localStorage.removeItem('access-token')
+      }
+     
     });
 
     return () => {
       unsubscribe();
     };
   }, []);
+
+
+// useEffect(() => {
+//     const unsubscribe = onAuthStateChanged(auth, (loggedUser) => {
+//       // console.log('Logged in user inside auth', loggedUser)
+//       setUser(loggedUser);
+//       setLoading(false);
+//     });
+
+//     return () => {
+//       unsubscribe();
+//     };
+//   }, []);
 
   const authInfo = {
     user,
