@@ -4,6 +4,7 @@ import WelcomeSection from "../WelcomeSection/WelcomeSection";
 import Popular from "../Popular/Popular";
 import SectionTitel from "../SectionTitel/SectionTitel";
 import ClassReview from "../ClassReview/ClassReview";
+import ExtraSection from "../ExtraSection/ExtraSection";
 
 
 
@@ -50,6 +51,7 @@ const Home = () => {
                 <hr />
 
                 <ClassReview></ClassReview>
+                <ExtraSection></ExtraSection>
 
             </div>
 

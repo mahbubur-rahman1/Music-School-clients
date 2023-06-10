@@ -65,7 +65,7 @@ const ClassCard = ({ populer }) => {
 
 
     return (
-        <div className='card w-full mx-auto bg-base-100 p-3 shadow-xl'>
+        <div data-aos="zoom-in-right" className='card w-full mx-auto bg-base-100 p-3 shadow-xl'>
             <img className='w-full h-48' src={picture} alt="" />
             <div className="mx-auto mt-5">
                 <h3 className="text-red  py-1 "><span className="font-bold text-green-800"> Instructors Name: </span>  <span className="font-semibold">{name}</span></h3>

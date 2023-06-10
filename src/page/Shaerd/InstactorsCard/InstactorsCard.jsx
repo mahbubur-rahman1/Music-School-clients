@@ -12,7 +12,8 @@ const InstactorsCard = ({ populer }) => {
     return (
         <div>
             <div className="">
-                <div data-aos="zoom-in-down" className="card w-full bg-base-100 p-3 shadow-xl ">
+                <div data-aos="fade-up"
+     data-aos-duration="3000" className="card w-full bg-base-100 p-3 shadow-xl ">
                     <div className="">
                         <img className="w-full h-44 rounded-lg" src={picture} alt="" />
                     </div>
