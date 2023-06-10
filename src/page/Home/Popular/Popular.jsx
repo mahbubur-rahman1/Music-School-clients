@@ -14,9 +14,9 @@ const Popular = ({ populer}) => {
        
         <div className="">
              
-            <div data-aos="zoom-in-down" className="card w-full  bg-base-100 p-3 shadow-xl ">
+            <div data-aos="zoom-in-down" className=" w-full  bg-slate-200 opacity-25 p-3 shadow-xl ">
                 <div className="">
-                    <img className="w-full h-44 rounded-lg" src={picture} alt="" />
+                    <img className="w-full rounded-full h-44 rounded-lg" src={picture} alt="" />
                 </div>
                 <div className="">
                     <h2 className="text-red  py-1 "><span className="font-bold text-green-800">Name: </span>    <span className="font-semibold">{name}</span></h2>
