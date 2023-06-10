@@ -7,6 +7,7 @@ import Swal from 'sweetalert2';
 const ClassDetailsCard = ({ populer }) => {
 
     const { name, picture, email, rating, classe, price } = populer;
+    
 
 
    
