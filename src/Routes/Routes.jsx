@@ -13,6 +13,7 @@ import PaymentHistory from "../DashBoard/PaymentHistory/PaymentHistory";
 import MyEnrollClass from "../DashBoard/MyEnrollClass/MyEnrollClass";
 import AllUsers from "../DashBoard/AllUsers/AllUsers";
 import AddClass from "../DashBoard/AddClass";
+import MyClasses from "../DashBoard/MyClasses/MyClasses";
 
 
 
@@ -70,6 +71,10 @@ import AddClass from "../DashBoard/AddClass";
         {
           path: "add-class-page",
           element: <AddClass></AddClass>
+        },
+        {
+          path: "my-class",
+          element: <MyClasses></MyClasses>
         }
       ]
     }
