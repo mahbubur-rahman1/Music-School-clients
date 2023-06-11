@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ClassDetailsCard from '../ClassDetailsCaed/ClassDetailsCard';
+import { Helmet } from 'react-helmet';
 
 const ClassesDetails = () => {
     const [classe, setClasse] = useState([]);
@@ -13,6 +14,9 @@ const ClassesDetails = () => {
     }, [])
     return (
         <div>
+            <Helmet>
+                <title>Music School || Classes</title>
+            </Helmet>
              <div className="grid md:grid-cols-3 gap-5  p-4">
                     {
 

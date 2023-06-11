@@ -8,6 +8,7 @@ import Instructors from "../page/Shaerd/Instructors/Instructors";
 import ClassesDetails from "../page/Home/ClassesDetails/ClassesDetails";
 import DashBoard from "../Layout/Main/DashBoard";
 import SelectetClass from "../DashBoard/SelectetClass";
+import Payment from "../DashBoard/Payment/Payment";
 
 
 
@@ -45,6 +46,10 @@ import SelectetClass from "../DashBoard/SelectetClass";
         {
           path: "selectetclass",
           element: <SelectetClass></SelectetClass>
+        },
+        {
+          path: 'payment',
+          element: <Payment></Payment>
         }
       ]
     }

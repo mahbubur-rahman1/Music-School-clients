@@ -5,6 +5,7 @@ import Popular from "../Popular/Popular";
 import SectionTitel from "../SectionTitel/SectionTitel";
 import ClassReview from "../ClassReview/ClassReview";
 import ExtraSection from "../ExtraSection/ExtraSection";
+import { Helmet } from "react-helmet";
 
 
 
@@ -20,6 +21,10 @@ const Home = () => {
     }, [])
     return (
         <div>
+            <Helmet>
+                <title>Music School</title>
+            </Helmet>
+            
             <Banner></Banner>
             <div className="max-w-screen-lg mx-auto">
                 <WelcomeSection></WelcomeSection>

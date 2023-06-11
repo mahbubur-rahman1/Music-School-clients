@@ -7,6 +7,7 @@ import '@smastrom/react-rating/style.css';
 import { AuthContext } from '../../../AuthProviter/AuthProviders';
 import Swal from 'sweetalert2';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const ClassDetailsCard = ({ populer }) => {
 
@@ -57,6 +58,11 @@ const handleEnroll = ()=>{
     }
     
 
+    <Helmet>
+        <title>
+            Music School || Classes
+        </title>
+    </Helmet>
 }
 
 

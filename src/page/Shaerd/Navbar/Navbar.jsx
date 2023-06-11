@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
     const navOption = <>
 
-        <Link to="/"><li className="font-semibold px-3">Home</li></Link>
-        <Link to="/instructors"><li className="font-semibold px-3">Instructors</li></Link>
-        <Link to="/classes"><li className="font-semibold px-3">Classes</li></Link>
-        <Link to="/dashboard"><li className="font-semibold px-3">Dashboard</li></Link>
+        <Link to="/"><li className=" text-2xl font-semibold px-3">Home</li></Link>
+        <Link to="/instructors"><li className=" text-2xl font-semibold px-3">Instructors</li></Link>
+        <Link to="/classes"><li className=" text-2xl font-semibold px-3">Classes</li></Link>
+        <Link to="/dashboard"><li className=" text-2xl font-semibold px-3">Dashboard</li></Link>
     </>
     return (
         <nav>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import InstactorsCard from "../InstactorsCard/InstactorsCard";
+import { Helmet } from "react-helmet";
 
 
 const Instructors = () => {
@@ -14,6 +15,9 @@ const Instructors = () => {
     }, [])
     return (
         <div>
+            <Helmet>
+                <title>Music School || Instructors</title>
+            </Helmet>
             <div className="max-w-screen-lg  mx-auto">
                 
 
