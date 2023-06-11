@@ -9,6 +9,8 @@ import ClassesDetails from "../page/Home/ClassesDetails/ClassesDetails";
 import DashBoard from "../Layout/Main/DashBoard";
 import SelectetClass from "../DashBoard/SelectetClass";
 import Payment from "../DashBoard/Payment/Payment";
+import PaymentHistory from "../DashBoard/PaymentHistory/PaymentHistory";
+import MyEnrollClass from "../DashBoard/MyEnrollClass/MyEnrollClass";
 
 
 
@@ -44,12 +46,20 @@ import Payment from "../DashBoard/Payment/Payment";
       element: <DashBoard></DashBoard>,
       children: [
         {
-          path: "selectetclass",
+          path: "my-Selected-class",
           element: <SelectetClass></SelectetClass>
         },
         {
           path: 'payment',
           element: <Payment></Payment>
+        },
+        {
+          path: 'payment-history',
+          element: <PaymentHistory></PaymentHistory>
+        },
+        {
+          path: 'my-enroll-class',
+          element: <MyEnrollClass></MyEnrollClass>
         }
       ]
     }
