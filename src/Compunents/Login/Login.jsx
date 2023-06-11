@@ -1,104 +1,100 @@
-// import React, { useContext, } from 'react';
-// import { Link, useLocation, useNavigate } from "react-router-dom";
+
 
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProviter/AuthProviders";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import useAuth from "../../Hooks/useAuth";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet";
-
-// import { AuthContext } from '../../../provider/AuthProviders';
-// import useTitele from '../../../hoks/useTitle';
-// import useTitle from '../../../hoks/useTitle';
-// import Swal from 'sweetalert2'
-// import { toast } from 'react-hot-toast';
+import { useForm } from "react-hook-form";
+import SocialLogin from "./SocialLogin";
 
 const Login = () => {
-    const {signIn, googleLogin, githubLogin} = useContext(AuthContext);
-
-
+    const {signIn} = useContext(AuthContext)
     const navigate = useNavigate();
     const location = useLocation();
-    // console.log('login page location', location)
-    const from = location.state?.from?.pathname || '/'
- 
-    useAuth("Login")
-
-    const handleLogin = event => {
-        event.preventDefault();
-        const form = event.target;
-        const email = form.email.value;
-        const password = form.password.value;
-
-        // console.log(email, password)
+    let from = location.state?.from?.pathname || "/";
 
 
-    if(password.length < 6){
-        toast.error('please provite 6 number')
-        return;
-    }
-      
-        signIn(email, password)
-        .then(result => {
+
+    const { register, handleSubmit, formState: { errors } } = useForm();
+
+    const onSubmit = data => {
+        signIn(data.email, data.password)
+        .then(result =>{
             const loggedUser = result.user;
-            console.log(loggedUser);
-            navigate(from, {replace: true})
-            toast.success('success login')
+            console.log(loggedUser)
             Swal.fire({
-                position: 'top-center',
-                icon: 'success',
-                title: 'Login is succesfull',
-                showConfirmButton: false,
-                timer: 1500
+                title: 'Login Successfull',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
               })
+              navigate(from, { replace: true });
         })
-        .catch(error => console.log(error))
-    }
-    const handleGoogleSignIn = () => {
-        googleLogin()
-        
-    }
-    const handleGithubSignIn = () => {
-        githubLogin()
+        navigate("/")
+        .catch(error =>{
+            console.log(error)
+        })
+
     }
 
-    return (
-        
-        <div className='container mx-auto bg-purple-300 rounded-lg py-2'>
-            <Helmet>
-                <title>Music School Login</title>
-            </Helmet>
-            <h3 className=' w-80 py-2 mt-2 mx-auto text-purple-100 font-bold text-lg rounded-lg bg-purple-900 text-center'>Please Login</h3>
-            <form onSubmit={handleLogin}  className="form-control w-full max-w-xs mx-auto">
 
-                <label className="label">
-                    <span className="label-text font-bold">What  your Email ?</span>
-
-                </label>
-                <input type="email" name='email' placeholder="Type here" required className="input input-bordered w-full max-w-xs" />
-
-                <label className="label">
-                    <span className="label-text font-bold">What is yours Password?</span>
-
-                </label>
-                <input type="password"  name='password' placeholder="Type here" required className="input input-bordered w-full max-w-xs" />
-
-
-                <button className='btn btn-accent mt-2' type='submit'>Login</button>
-
-                <p>Don't have an account <span> <Link to="/register" className='link link-primary' >Registration</Link></span></p>
-                <p onClick={handleGoogleSignIn} className='btn btn-error w-80 py-2 mt-2 mx-auto text-center'>
-                    Login With Google
-                </p>
-                <p onClick={handleGithubSignIn} className='btn bg-black w-80 py-2 mt-2 mx-auto text-center'>
-                 {/* <FaGithub  className=' w-10 h-7'></FaGithub> */}
-                Login With GitHub 
-            </p>
-            </form>
-
+    console.log(errors);
+  return (
+    <div>
+        <Helmet>
+        <title>Music School | Login</title>
+        </Helmet>
+      <div className=" mt-11" data-aos="fade-up" >
+        <div className="  w-10/12 md:w-4/12 lg:w-5/12 mx-auto  ">
+          <div className="card  w-full  shadow-2xl bg-black bg-opacity-50">
+            <h2 className="text-center pt-5 text-3xl text-sky-500 ">
+              Please Login
+            </h2>
+            <div className="card-body">
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-white">Email</span>
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="email"
+                    {...register("email", {required: true, maxLength: 80})} 
+                    className="input input-bordered text-black"
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-white">Password</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="password"
+                    {...register("password", {required: true, maxLength: 80})} 
+                    className="input input-bordered text-black"
+                  />
+                </div>
+                <div className="form-control mt-6">
+                  <input
+                    type="submit"
+                    value="Login"
+                    className="btn btn-primary"
+                  />
+                </div>
+              </form>
+              <p className="mt-3">Didn't have an acccout?  <Link to='/signup'> <span className="text-red-500" >Signup</span></Link> </p>
+              <div className="divider">OR</div>
+              <SocialLogin></SocialLogin>
+            </div>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Login;

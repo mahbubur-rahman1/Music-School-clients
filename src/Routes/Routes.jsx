@@ -11,6 +11,8 @@ import SelectetClass from "../DashBoard/SelectetClass";
 import Payment from "../DashBoard/Payment/Payment";
 import PaymentHistory from "../DashBoard/PaymentHistory/PaymentHistory";
 import MyEnrollClass from "../DashBoard/MyEnrollClass/MyEnrollClass";
+import AllUsers from "../DashBoard/AllUsers/AllUsers";
+import AddClass from "../DashBoard/AddClass";
 
 
 
@@ -60,6 +62,14 @@ import MyEnrollClass from "../DashBoard/MyEnrollClass/MyEnrollClass";
         {
           path: 'my-enroll-class',
           element: <MyEnrollClass></MyEnrollClass>
+        },
+        {
+          path: 'all-users',
+          element: <AllUsers></AllUsers>
+        },
+        {
+          path: "add-class-page",
+          element: <AddClass></AddClass>
         }
       ]
     }

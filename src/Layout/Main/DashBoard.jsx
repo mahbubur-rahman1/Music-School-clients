@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { FaCalculator, FaContao, FaGratipay, FaHome, FaMendeley, FaShopify, FaShoppingCart } from 'react-icons/fa';
+import { FaCalculator, FaContao, FaGratipay, FaHome, FaMendeley, FaShopify, FaShoppingCart, FaUserCircle } from 'react-icons/fa';
 import { NavLink, Outlet } from 'react-router-dom';
 import useEnroll from '../../Hooks/useEnroll';
 import useAdmin from '../../Hooks/useAdmin';
@@ -15,8 +15,8 @@ const Dashboard = () => {
   const [myEnroll] = useMyEnroll();
 
   //   const  isAdmin = true;
-  const [isAdmin] = useAdmin();
-  const [isInstructor] = useInstructor();
+//   const [isAdmin] = useAdmin();
+//   const [isInstructor] = useInstructor();
   return (
     <div >
       <Helmet>
@@ -39,19 +39,16 @@ const Dashboard = () => {
         <div className="drawer-side ">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80 h-full bg-black space-y-2 bg-opacity-80 text-white ">
-            {isAdmin ?
-              (<>
+           <>
+               
                 <li >
-                  <NavLink to='/'> <FaHome /> Admin Home</NavLink>
+                  <NavLink to='/dashboard/all-users'><FaUserCircle></FaUserCircle> All Users</NavLink>
                 </li>
-                <li >
-                  <NavLink to='/dashboard/all-users'><FaShopify></FaShopify> All Users</NavLink>
-                </li>
-              </>)
-              : isInstructor ? (
+              </>
+              
                 <>
                   <li >
-                    <NavLink to='/'> <FaHome /> Instructor Home</NavLink>
+                    <NavLink to='/'> <FaHome />Home</NavLink>
                   </li>
                   <li >
                     <NavLink to='/dashboard/add-class-page'><FaCalculator></FaCalculator> Add Class Page</NavLink>
@@ -62,8 +59,8 @@ const Dashboard = () => {
                     </NavLink>
                   </li>
                 </>
-              )
-                : (
+              
+             
                   <>
                     <li >
                       <NavLink to='/'> <FaHome /> User Home</NavLink>
@@ -84,10 +81,10 @@ const Dashboard = () => {
                     </li>
                   </>
 
-                )}
+                
 
 
-            <li>
+            {/* <li>
               <hr />
               <NavLink to='/'> <FaHome /> Home</NavLink>
             </li>
@@ -96,7 +93,7 @@ const Dashboard = () => {
             </li>
             <li >
               <NavLink to='/'><FaContao></FaContao> Contact</NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
