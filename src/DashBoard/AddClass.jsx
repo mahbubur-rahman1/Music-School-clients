@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 
 const img_hosting_token = import.meta.env.VITE_Image_Upload_Token;
-
 const AddClass = () => {
   const {user} = useContext(AuthContext)
   const [axiosSecure] = useAxiosSecure();
@@ -40,7 +39,6 @@ const AddClass = () => {
             email,
             rating : parseFloat(rating)
           };
-        //   console.log(newItem);
           axiosSecure.post("/addClass", newItem).then((data) => {
             console.log("after posting new class", data.data);
             if (data.data.insertedId) {
@@ -58,7 +56,6 @@ const AddClass = () => {
       });
   };
 
-//   danceName, image, instructorName, price, rating, availableSeats
 
   console.log(errors);
   return (
@@ -109,24 +106,7 @@ const AddClass = () => {
 
         
 
-        {/* <div className="grid grid-cols-2 gap-2">
-          <select
-            {...register("category", { required: true })}
-            className="input input-bordered w-full "
-          >
-            <option value="salad">salad</option>
-            <option value="dessert">dessert</option>
-            <option value="soup">soup</option>
-            <option value="pizza">pizza</option>
-          </select>       
-        </div> */}
-
-
-        {/* <textarea
-          {...register("Details", { required: true, maxLength: 400 })}
-          className="textarea textarea-bordered"
-          placeholder="Class Details"
-        ></textarea> */}
+      
 
         <input
           type="file"

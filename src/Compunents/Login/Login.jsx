@@ -1,6 +1,6 @@
 
 
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../AuthProviter/AuthProviders";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
@@ -43,14 +43,19 @@ const Login = () => {
 
 
     console.log(errors);
+
+    const [show, setShow] = useState(false)
+    const handlePasswordShow =()=>{
+        setShow(!show)
+      }
   return (
     <div>
         <Helmet>
         <title>Music School | Login</title>
         </Helmet>
-      <div className=" " data-aos="fade-up" >
-        <div className="  w-10/12 md:w-4/12 lg:w-5/12 mx-auto  ">
-          <div className="card  w-full  shadow-2xl bg-black bg-opacity-50">
+      <div className=" " data-aos="fade-up " >
+        <div className=" mb-6 w-10/12 md:w-4/12 lg:w-5/12 mx-auto  ">
+          <div className="card  w-full text-black   shadow-2xl bg-white bg-opacity-90">
             <h2 className="text-center pt-5 text-3xl text-sky-500 ">
               Please Login
             </h2>
@@ -58,7 +63,7 @@ const Login = () => {
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text text-white">Email</span>
+                    <span className="label-text text-black">Email</span>
                   </label>
                   <input
                     type="email"
@@ -69,14 +74,20 @@ const Login = () => {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text text-white">Password</span>
+                    <span className="label-text">Password</span>
                   </label>
+                  <div className="form-control relative">
                   <input
-                    type="password"
+                  type={show? "text" : "password"}
+                    
                     placeholder="password"
                     {...register("password", {required: true, maxLength: 80})} 
                     className="input input-bordered text-black"
                   />
+                  <span onClick={handlePasswordShow} className="absolute cursor-pointer text-red-800 font-semibold top-2 right-5">
+                      {show? "Hide" : "Show"}
+                        </span>
+                  </div>
                 </div>
                 <div className="form-control mt-6">
                   <input

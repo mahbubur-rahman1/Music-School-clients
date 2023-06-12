@@ -82,10 +82,6 @@ const Dashboard = () => {
             </li>
 
             <li >
-                <NavLink to='/dashboard/all-users'><FaUserCircle></FaUserCircle> All Users</NavLink>
-            </li>
-
-            <li >
                 <NavLink to='/dashboard/my-Selected-class'><FaShoppingCart></FaShoppingCart> My Selected Class
                 <span className="badge badge-secondary">+{cart?.length || 0}</span>
                 </NavLink>
@@ -97,18 +93,6 @@ const Dashboard = () => {
       }
 
 
-
-
-                        {/* <li>
-              <hr />
-              <NavLink to='/'> <FaHome /> Home</NavLink>
-            </li>
-            <li >
-              <NavLink to='/'><FaMendeley></FaMendeley> menu</NavLink>
-            </li>
-            <li >
-              <NavLink to='/'><FaContao></FaContao> Contact</NavLink>
-            </li> */}
                     </ul>
                 </div>
             </div>

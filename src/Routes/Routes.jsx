@@ -15,6 +15,7 @@ import AllUsers from "../DashBoard/AllUsers/AllUsers";
 import AddClass from "../DashBoard/AddClass";
 import MyClasses from "../DashBoard/MyClasses/MyClasses";
 import Signin from "../Compunents/Login/Signin";
+import ErrorPage from "../page/ErrorPage/ErrorPage";
 
 
 
@@ -23,6 +24,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",

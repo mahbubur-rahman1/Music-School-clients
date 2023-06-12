@@ -61,6 +61,35 @@ const Signin = () => {
       });
   };
   //   console.log(errors);
+
+
+  const [errorPass,  setErrorPass] = useState("")
+const [confirmPassword, setConfirmPassword] = useState("")
+const[password, setPassword] = useState("")
+console.log(password)
+
+
+const checkValidation = (e)=>{
+  const confPass = e.target.value;
+  setConfirmPassword(confPass);
+  if(password !== confPass){
+    setErrorPass("password don't match")
+  }
+  else{
+    setErrorPass("password don't match")
+}
+}
+
+const [show, setShow] = useState(false)
+    const handlePasswordShow =()=>{
+        setShow(!show)
+      }
+
+      const [shows, setShows] = useState(false)
+    const handlePasswordShows =()=>{
+        setShows(!shows)
+      }
+
   return (
     <div>
       <Helmet>
@@ -102,8 +131,11 @@ const Signin = () => {
                   <label className="label">
                     <span className="label-text text-white">Password</span>
                   </label>
+                  <div className="relative form-control">
                   <input
-                    type="password"
+                  defaultValue={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                    type={show? "text" : "password"}
                     placeholder="password"
                     {...register("password", { required: true,
                          maxLength: 80,
@@ -111,6 +143,10 @@ const Signin = () => {
                         })}
                     className="input input-bordered text-black"
                   />
+                    <span onClick={handlePasswordShow} className="absolute cursor-pointer text-red-800 font-semibold top-2 right-5">
+                      {show? "Hide" : "Show"}
+                        </span>
+                  </div>
                      {
                 errors.password?.type === 'required' && 
                 <p className="text-red-500">Passwors required</p>
@@ -135,8 +171,12 @@ const Signin = () => {
                       Confirm Password
                     </span>
                   </label>
+                  <div className="form-control relative">
                   <input
-                    type="password"
+                  type={shows? "text" : "password"}
+                  defaultValue={confirmPassword}
+                  onChange={(e) => checkValidation(e)}
+                    
                     placeholder="password"
                     {...register("confirmPassword", {
                       required: true,
@@ -145,22 +185,20 @@ const Signin = () => {
                     })}
                     className="input input-bordered text-black"
                   />
+                  <span onClick={handlePasswordShows} className="absolute cursor-pointer text-red-800 font-semibold top-2 right-5">
+                      {shows? "Hide" : "Show"}
+                        </span>
+                  </div>
                    {
                 errors.confirmPassword?.type === 'required' && 
                 <p className="text-red-500">Passwors required</p>
               }
-               {
-                errors.confirmPassword?.type === 'minLength' && 
-                <p className="text-red-500">Passwors must be 6 characters</p>
-              }
-               {
-                errors.confirmPassword?.type === 'maxLength' && 
-                <p className="text-red-500">Passwors must be less than 20 characters</p>
-              }
               {
                 errors.confirmPassword?.type === 'pattern' && 
-                <p className="text-red-500">Passwors must be one uppercase one lowercase one spicial characters</p>
+                <p className="text-red-500">Don't match password</p>
               }
+
+              
 
                 </div>
                 <div className="form-control">

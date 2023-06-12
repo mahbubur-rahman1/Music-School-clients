@@ -17,11 +17,14 @@ const Navbar = () => {
         <Link to="/"><li className="text-2xl font-semibold px-3">Home</li></Link>
         <Link to="/instructors"><li className="text-2xl font-semibold px-3">Instructors</li></Link>
         <Link to="/classes"><li className="text-2xl font-semibold px-3">Classes</li></Link>
-        <Link to="/dashboard"><li className="text-2xl font-semibold px-3">Dashboard</li></Link>
+       {
+        user?.email? <Link to="/dashboard"><li className="text-2xl font-semibold px-3">Dashboard</li></Link>
+        : ""
+       }
     </>
     return (
         <nav>
-            <div className="navbar  fixed z-30  text-white bg-opacity-50 bg-black">
+            <div className="navbar  fixed z-30 text-white bg-opacity-50 bg-black">
                 <div className="navbar-start ">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -29,7 +32,7 @@ const Navbar = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-compact bg-gray-400 dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             {navOption}
-                        </ul>
+                        </ul>   
                     </div>
                     <img className="h-14 w-28 rounded-lg" src="https://i.pinimg.com/originals/79/40/08/794008c804a96f42af807ab929e3b0f0.jpg" alt="" />
                     <a className="btn btn-ghost normal-case text-xl">Music School</a>
