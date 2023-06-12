@@ -16,7 +16,7 @@ const ClassCard = ({ populer }) => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    // danceName, image, instructorName,
+    // musicName, image, instructorName,
 
 
     const handleEnroll = () => {

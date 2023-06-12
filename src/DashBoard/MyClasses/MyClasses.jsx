@@ -59,9 +59,9 @@ const MyClasses = () => {
                     <thead>
                         <tr className="text-white text-xl">
                             <th>#</th>
-                            <th>Dance Image</th>
+                            <th>music Image</th>
                             <th>Instructor Email</th>
-                            <th>Dance Name</th>
+                            <th>music Name</th>
                             <th>Price</th>
                             <th>Action</th>
                         </tr>
@@ -81,7 +81,7 @@ const MyClasses = () => {
                                     </div>
                                 </td>
                                 <td>{item.email}</td>
-                                <td>{item.danceName}</td>
+                                <td>{item.musicName}</td>
                                 <td className="">{item.price}$
                                 </td>
                                 <th>
