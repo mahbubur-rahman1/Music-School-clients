@@ -31,7 +31,7 @@ const Navbar = () => {
                             {navOption}
                         </ul>
                     </div>
-                    <img className="h-16 w-24 rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0SotQ6s59qGAG64o22hAX84dJxgE2nqLjbg&usqp=CAU" alt="" />
+                    <img className="h-14 w-28 rounded-lg" src="https://i.pinimg.com/originals/79/40/08/794008c804a96f42af807ab929e3b0f0.jpg" alt="" />
                     <a className="btn btn-ghost normal-case text-xl">Music School</a>
                 </div>
                 <div className="navbar-center  hidden lg:flex">

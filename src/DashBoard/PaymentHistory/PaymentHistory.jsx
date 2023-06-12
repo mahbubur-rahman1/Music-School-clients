@@ -18,16 +18,16 @@ const PaymentHistory = () => {
            className="table w-full">
             {/* head */}
             <thead>
-              <tr className="text-white text-xl">
+              <tr className="text-white text-xl ">
                 <th>#</th>
-                <th>Payment Email</th>
-                <th>Payment Date</th>
-                <th>Transaction id</th>
-                <th>Total Amount</th>
+                <th >Payment Email</th>
+                <th className='text-red-600'>Payment Date</th>
+                <th >Transaction id</th>
+                <th className='text-red-600'>Total Amount</th>
                
               </tr>
             </thead>
-            <tbody className='text-xs'>
+            <tbody className='text-xs bg-gray-900 opacity-90'>
               {myEnroll.map((item, index) => (
                 <tr  
                  key={item._id}>

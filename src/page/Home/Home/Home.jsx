@@ -13,7 +13,7 @@ const Home = () => {
     const [popular, setPopular] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/instructors')
+        fetch('https://assignment-12-server-site-mahbubur-rahman1.vercel.app/instructors')
             .then(res => res.json())
             .then(data => {
                 setPopular(data)

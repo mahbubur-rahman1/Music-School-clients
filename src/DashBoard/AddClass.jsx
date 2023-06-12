@@ -1,4 +1,3 @@
-
 import { useContext } from "react";
 import { AuthContext } from "../AuthProviter/AuthProviders";
 import useAxiosSecure from "../Hooks/useAxiosSecure";
@@ -6,7 +5,7 @@ import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 
 const img_hosting_token = import.meta.env.VITE_Image_Upload_Token;
-// console.log(img_hosting_token)
+
 const AddClass = () => {
   const {user} = useContext(AuthContext)
   const [axiosSecure] = useAxiosSecure();

@@ -1,10 +1,3 @@
-
-// import { Helmet } from "react-helmet";
-// import { FaTrashAlt } from "react-icons/fa";
-// import { Link } from "react-router-dom";
-// import Swal from "sweetalert2";
-// import useEnroll from "../../Hooks/useEnroll";
-
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
@@ -15,13 +8,7 @@ import useEnroll from "../Hooks/useEnroll";
 
 const SelectetClass = () => {
     const [cart, refetch] = useEnroll();
-    // console.log(cart)
-    // danceName, image, instructorName, price, rating, availableSeats 
-
     const total = cart.reduce((sum, item) => item.price + sum, 0)
-
-
-
 
 
     const handleDelete = (item) => {
@@ -36,12 +23,11 @@ const SelectetClass = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/enroll/${item._id}`, {
+                fetch(`https://assignment-12-server-site-mahbubur-rahman1.vercel.app/enroll/${item._id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
                     .then(data => {
-                        // console.log(data)
                         if (data.deletedCount > 0) {
                             refetch();
                             Swal.fire(
@@ -64,7 +50,7 @@ const SelectetClass = () => {
     return (
         <div className="w-full pb-[700px] pt-20  text-white">
             <Helmet>
-                <title>Bistro Boss | Dashboard | my-Select-class</title>
+                <title>Music School | Dashboard | my-Select-class</title>
             </Helmet>
             <div className="flex uppercase font-semibold justify-evenly items-center gap-4 mb-2">
                 <h3 className="text-2xl">Total Class: <span className="text-red-500">{cart.length}</span></h3>

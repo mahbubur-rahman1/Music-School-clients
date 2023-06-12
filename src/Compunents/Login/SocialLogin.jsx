@@ -18,7 +18,7 @@ const SocialLogin = () => {
             email: loggedUser.email,
             photoURL : loggedUser.photoURL
           };
-          fetch("http://localhost:5000/users", {
+          fetch("https://assignment-12-server-site-mahbubur-rahman1.vercel.app/users", {
             method: "POST",
             headers: {
               "content-type": "application/json",

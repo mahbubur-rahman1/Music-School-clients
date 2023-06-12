@@ -36,7 +36,7 @@ const MyEnrollClass = () => {
                
               </tr>
             </thead>
-            <tbody>
+            <tbody className='bg-gray-900 opacity-90 '>
               {myEnroll.map((item, index) => (
                 <tr  
                  key={item._id}>

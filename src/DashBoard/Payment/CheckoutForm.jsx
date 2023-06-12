@@ -9,9 +9,7 @@ import { AuthContext } from '../../AuthProviter/AuthProviders';
 
 
 const CheckoutForm = ({price, cart}) => {
-  // console.log(price)
   const {user} = useContext(AuthContext)
-  // console.log(user)
     const stripe = useStripe();
     const elements = useElements();
     const [axiosSecure] = useAxiosSecure();
@@ -33,12 +31,9 @@ const CheckoutForm = ({price, cart}) => {
 
 
     const handleSubmit = async (event) => {
-        // Block native form submission.
         event.preventDefault();
 
         if (!stripe || !elements) {
-            // Stripe.js has not loaded yet. Make sure to disable
-            // form submission until Stripe.js has loaded.
             return;
           }
 
@@ -47,9 +42,6 @@ const CheckoutForm = ({price, cart}) => {
         if (card === null) {
         return;
         }
-        // console.log('card', card)
-
-           // Use your card Element with other Stripe.js APIs
         const {error, paymentMethod} = await stripe.createPaymentMethod({
           type: 'card',
           card,
@@ -61,7 +53,7 @@ const CheckoutForm = ({price, cart}) => {
         } 
         else {
           setCardError('');
-          // console.log('PaymentMethod', paymentMethod);
+          
         }
 
         setProcessing(true)
@@ -86,8 +78,6 @@ console.log(clientSecret)
         setProcessing(false)
         if(paymentIntent.status === 'succeeded'){
           setTransactionId(paymentIntent.id)
-
-          // save payment information to the server
           const payment = {
             email: user?.email,
             transactionId: paymentIntent.id,

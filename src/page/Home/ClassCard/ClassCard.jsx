@@ -22,7 +22,7 @@ const ClassCard = ({ populer }) => {
     const handleEnroll = () => {
         if (user && user.email) {
             const enrollData = { enrollId: _id, name,  price, classe, picture, rating, email: user.email }
-            fetch('http://localhost:5000/all-enroll', {
+            fetch('https://assignment-12-server-site-mahbubur-rahman1.vercel.app/all-enroll', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

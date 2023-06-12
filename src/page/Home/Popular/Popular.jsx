@@ -15,13 +15,13 @@ const Popular = ({ populer }) => {
         <div className="">
 
             <div data-aos="fade-up"
-                data-aos-duration="3000" className="card bg-gray-300 opacity-25 p-3 shadow-xl ">
+                data-aos-duration="3000" className="card bg-black  opacity-25 p-3 shadow-xl ">
                 <div className="">
                     <img className="w-full rounded-lg  h-56 " src={picture} alt="" />
                 </div>
                 <div className="">
-                    <h2 className="text-red  py-1 "><span className="font-bold text-green-800">Name: </span>    <span className="font-semibold">{name}</span></h2>
-                    <h3 className="text-red  py-1 "><span className="font-bold text-green-800"> Email: </span>  <span className="font-semibold">{email}</span></h3>
+                    <h2 className="text-red  py-1 "><span className="font-bold text-green-800">Name: </span>    <span className="font-semibold text-red-600">{name}</span></h2>
+                    <h3 className="text-red  py-1 "><span className="font-bold text-green-800"> Email: </span>  <span className="font-semibold text-red-600">{email}</span></h3>
                     <span className="font-semibold"> <Rating
                         style={{ maxWidth: 140 }}
                         value={rating}

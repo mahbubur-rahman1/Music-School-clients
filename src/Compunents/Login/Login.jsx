@@ -48,7 +48,7 @@ const Login = () => {
         <Helmet>
         <title>Music School | Login</title>
         </Helmet>
-      <div className=" mt-11" data-aos="fade-up" >
+      <div className=" " data-aos="fade-up" >
         <div className="  w-10/12 md:w-4/12 lg:w-5/12 mx-auto  ">
           <div className="card  w-full  shadow-2xl bg-black bg-opacity-50">
             <h2 className="text-center pt-5 text-3xl text-sky-500 ">
